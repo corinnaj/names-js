@@ -1,0 +1,11 @@
+{
+  "name": "names",
+  "version": "1.0.0",
+  "description": "A JS library to generate names based on the python library with the same name",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Corinna Jaschek",
+  "license": "MIT"
+}

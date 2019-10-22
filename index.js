@@ -6,7 +6,7 @@ function capitalize(name) {
   return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
 }
 
-function get_name(option) {
+function getName(option) {
   const selected = Math.random() * 90;
   for (let i = 0; i <= option.length; i++) {
     if(option[i][1] > selected) return option[i][0];
@@ -14,24 +14,30 @@ function get_name(option) {
   return ""  // Return empty string if file is empty
 }
 
-exports.get_first_name(gender = null) {
+function getFirstName(gender = null) {
   if(!gender) {
     gender = Math.random() >= 0.5 ? 'male' : 'female';
   }
   let name
   if (gender == 'male') {
-    return capitalize(get_name(male))
+    return capitalize(getName(male))
   } else if (gender == 'female') {
-    return capitalize(get_name(female))
+    return capitalize(getName(female))
   } else {
     throw "Only 'male' and 'female' are supported as gender";
   }
 }
 
-exports.get_last_name() {
-    return capitalize(get_name(last))
+function getLastName() {
+    return capitalize(getName(last))
 }
 
-exports.get_full_name(gender = null) {
-  return get_first_name(gender).concat(" ", get_last_name())
+function getFullName(gender = null) {
+  return getFirstName(gender).concat(" ", getLastName())
+}
+
+module.exports = {
+  getFirstName,
+  getLastName,
+  getFullName,
 }

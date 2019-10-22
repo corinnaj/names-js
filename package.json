@@ -1,5 +1,5 @@
 {
-  "name": "names",
+  "name": "local-names",
   "version": "1.0.0",
   "description": "A JS library to generate names based on the python library with the same name",
   "main": "index.js",

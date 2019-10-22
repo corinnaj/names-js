@@ -8,9 +8,8 @@ function capitalize(name) {
 
 function get_name(option) {
   const selected = Math.random() * 90;
-  const names = option //TODO get proper array
-  for (let i = 0; i <= names.length; i++) {
-    if(names[i][1] > selected) return names[i][0];
+  for (let i = 0; i <= option.length; i++) {
+    if(option[i][1] > selected) return option[i][0];
   }
   return ""  // Return empty string if file is empty
 }

@@ -1,6 +1,6 @@
-import { female } from 'female';
-import { male } from 'female';
-import { last } from 'last';
+var female = require('./female')
+var male = require('./male')
+var last = require('./last')
 
 function capitalize(name) {
   return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()

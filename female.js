@@ -2000,7 +2000,7 @@ exports.female = [
 	['SHERON', 86.486],
 	['SHASTA', 86.488],
 	['SHANITA', 86.491],
-	['SHANI',', 86.494],
+	['SHANI', 86.494],
 	['SHANDRA', 86.497],
 	['RANDA', 86.499],
 	['PINKIE', 86.502],

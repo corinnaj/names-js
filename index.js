@@ -20,16 +20,16 @@ function getFirstName(gender = null) {
   }
   let name
   if (gender == 'male') {
-    return capitalize(getName(male))
+    return capitalize(getName(male.male))
   } else if (gender == 'female') {
-    return capitalize(getName(female))
+    return capitalize(getName(female.female))
   } else {
     throw "Only 'male' and 'female' are supported as gender";
   }
 }
 
 function getLastName() {
-    return capitalize(getName(last))
+    return capitalize(getName(last.last))
 }
 
 function getFullName(gender = null) {
